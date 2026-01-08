@@ -1,0 +1,179 @@
+:root {
+  --beige: #f5f3ed;
+  --beige-dark: #e8e4d8;
+  --olive: #6b7d4a;
+  --olive-dark: #55663a;
+  --text-dark: #2f2f2f;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--beige);
+  color: var(--text-dark);
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--olive);
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button.active {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: white;
+}
+
+/* LOGO */
+.logo {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+/* SITE NAME */
+.site-name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.site-name .track {
+  color: #ffffff;
+}
+
+.site-name .me {
+  color: #e8e4d8;
+}
+
+.site-name .num {
+  color: #cfd6b8;
+  font-size: 18px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  height: 42px;
+}
+
+.brand span {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav button {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* SEARCH */
+.search-card {
+  background: var(--beige-dark);
+  margin: 24px auto;
+  padding: 20px;
+  max-width: 520px;
+  border-radius: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.search-card input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.search-card button {
+  background: var(--olive);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-card button:hover {
+  background: var(--olive-dark);
+}
+
+/* VIEWS */
+.view {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 24px 40px;
+}
+
+.view h2 {
+  margin-bottom: 14px;
+}
+
+/* MAP CARD */
+.map-card {
+  background: white;
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+  height: 420px;
+  border-radius: 14px;
+}
+
+.map-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+  background: var(--beige);
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+/* SERVICE CARD */
+.service-card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.provider-box {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+  align-items: center;
+  background: var(--beige);
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.provider-box img {
+  width: 80px;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
