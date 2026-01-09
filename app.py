@@ -36,12 +36,6 @@ def lookup():
         lat = results[0]['geometry']['lat']
         lng = results[0]['geometry']['lng']
 
-        return jsonify({
-            "location": number_location,
-            "carrier": service_provider,
-            "latitude": lat,
-            "longitude": lng
-        })
         provider_info = service_provider.get(service_provider)
         return jsonify({
             "location": number_location,
