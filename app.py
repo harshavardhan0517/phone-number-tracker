@@ -26,9 +26,7 @@ def lookup():
             check_number, "en"
         )
 
-        service_provider = carrier.name_for_number(
-            check_number, "en"
-        )
+        carrier_name = carrier.name_for_number(check_number, "en")
 
         query = str(number_location)
         results = geo.geocode(query)
@@ -36,7 +34,7 @@ def lookup():
         lat = results[0]['geometry']['lat']
         lng = results[0]['geometry']['lng']
 
-        provider_info = service_provider.get(service_provider)
+        provider_info = service_provider.get(carrier_name)
         return jsonify({
             "location": number_location,
             "carrier": service_provider,
